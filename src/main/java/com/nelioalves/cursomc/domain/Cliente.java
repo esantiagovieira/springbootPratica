@@ -31,7 +31,7 @@ public class Cliente implements Serializable{
 	private List<Endereco> enderecos = new ArrayList<>();
 	
 	@ElementCollection
-	@CollectionTable(name="TELEEFONE")
+	@CollectionTable(name="TELEFONE")
 	private Set<String> telefones = new HashSet<>();
 	
 	@OneToMany(mappedBy="cliente")
