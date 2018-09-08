@@ -22,7 +22,12 @@ public class CategoriaService {
 	}
 
 	public Categoria insert(Categoria obj) {
-		obj.setId(null);
+		obj.setId(null); //quando o id é nulo, ele vai inserir o novo objeto porque a classe esta com anotação identity no id
 		return repo.save(obj);
+	}
+
+	public Categoria update(Categoria obj) {
+		find(obj.getId());
+		return repo.save(obj); //O put retorna codigo 204 No Content
 	}
 }
