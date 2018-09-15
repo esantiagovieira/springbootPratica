@@ -5,6 +5,8 @@ import java.io.Serializable;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
 
+import org.hibernate.validator.constraints.Length;
+
 import com.praticaspring.cursomc.domain.Cliente;
 
 public class ClienteDTO implements Serializable{
@@ -13,6 +15,7 @@ public class ClienteDTO implements Serializable{
 	private Integer id;
 	
 	@NotEmpty(message="Preenchimento obrigatório")
+	@Length(min=5, max=120,message="Tamanho entre 5 e 120 caracteres")
 	private String nome;
 	@NotEmpty
 	@Email
