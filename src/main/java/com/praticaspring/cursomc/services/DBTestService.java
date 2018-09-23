@@ -20,6 +20,7 @@ import com.praticaspring.cursomc.domain.PagamentoComCartao;
 import com.praticaspring.cursomc.domain.Pedido;
 import com.praticaspring.cursomc.domain.Produto;
 import com.praticaspring.cursomc.domain.enums.EstadoPagamento;
+import com.praticaspring.cursomc.domain.enums.Perfil;
 import com.praticaspring.cursomc.domain.enums.TipoCliente;
 import com.praticaspring.cursomc.repositories.CategoriaRepository;
 import com.praticaspring.cursomc.repositories.CidadeRepository;
@@ -114,17 +115,23 @@ public class DBTestService {
 		estadoRepository.saveAll(Arrays.asList(est1, est2));
 		cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
 		
-		Cliente cl1 = new Cliente(null, "Maria Silva", "esantiagovieira@gmail.com", "36378912377", TipoCliente.PESSOAFISICA, pe.encode("1234") );
-		
+		Cliente cl1 = new Cliente(null, "Maria Silva", "avalonsantiago@gmail.com", "36378912377", TipoCliente.PESSOAFISICA, pe.encode("1234") );
 		cl1.getTelefones().addAll(Arrays.asList("27321321","12345678"));
+
+		Cliente cl2 = new Cliente(null, "Administrador", "esantiagovieira@gmail.com", "36378912377", TipoCliente.PESSOAFISICA, pe.encode("1234") );
+		cl2.getTelefones().addAll(Arrays.asList("987654321","23456781"));
+		cl2.addPerfil(Perfil.ADMIN);
 		
 		Endereco e1 = new Endereco(null, "Rua Flores", "50","", "Bairro1", "18080000", cl1, c1);
 		Endereco e2 = new Endereco(null, "Venida Matos", "150", "", "Lugar algum", "18080000", cl1, c2);
 		
-		cl1.getEnderecos().addAll(Arrays.asList(e1, e2));
+		Endereco e3 = new Endereco(null, "Rua Administradr", "210","", "Administrolandia", "18080001", cl2, c1);
 		
-		clienteRepository.saveAll(Arrays.asList(cl1));
-		enderecoRepository.saveAll(Arrays.asList(e1,e2));
+		cl1.getEnderecos().addAll(Arrays.asList(e1, e2));
+		cl2.getEnderecos().addAll(Arrays.asList(e3));
+		
+		clienteRepository.saveAll(Arrays.asList(cl1, cl2));
+		enderecoRepository.saveAll(Arrays.asList(e1,e2, e3));
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm");
 		
