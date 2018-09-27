@@ -1,0 +1,209 @@
+[33mcommit ad44b2831731da9e49947191af19fe89514dc3a0[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Wed Sep 26 22:28:25 2018 -0300
+
+    Login
+
+[33mcommit 0903b0556220b0f2a141228a2b40436a80b61fe1[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Mon Sep 24 20:34:20 2018 -0300
+
+    Autenticação usuário - Verificar Codigo
+
+[33mcommit d89ac4a613a27cc926b71c34a09d0ced8f03085f[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sun Sep 23 14:55:56 2018 -0300
+
+    salvando perfil de usuário no DB
+
+[33mcommit 3406b2d9ee5de754ff9cb4f9bd6c0738721ed1ac[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sun Sep 23 14:33:04 2018 -0300
+
+    adicionando senha para Cliente
+
+[33mcommit cf470d1f8757c7e5b69bf638fec2616fa3e54d3f[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sun Sep 23 14:18:20 2018 -0300
+
+    Configuração do Spring Security
+
+[33mcommit f8b79a349b93bb971d9505bc01c671ae1773ea2b[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 22 14:03:07 2018 -0300
+
+    Email HTML
+
+[33mcommit db27a1562e4cad1bcd8f6cc270b064d29922cf25[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 22 13:18:27 2018 -0300
+
+    Implementando SMTPService com Google
+
+[33mcommit 506b3447286fa60cae361effa941eb1e722768c0[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 22 12:52:18 2018 -0300
+
+    MockEmail Service com Template Strategy
+
+[33mcommit bf2bd695c3983cf5b62c4307b98709e55f3e5b8e[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 22 12:32:40 2018 -0300
+
+    implementando toString de pedido
+
+[33mcommit fc6ca52caea88016f3196ec4798200015c75a5ec[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Fri Sep 21 23:31:32 2018 -0300
+
+    Configuração e envio para ambiente prod
+
+[33mcommit 4fadeaa290311c5a34d6bf7dbee06d884eb93d78[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Fri Sep 21 22:43:00 2018 -0300
+
+    criando profile de desenvolvimento
+
+[33mcommit 452c6beb82172f9dea91c81267cafd51207173d7[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Fri Sep 21 22:27:18 2018 -0300
+
+    criando profile de teste
+
+[33mcommit 64489cd09a911e06a3b45b8904d01d0e0647e0bd[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Wed Sep 19 23:25:24 2018 -0300
+
+    Inserindo Pedido
+
+[33mcommit 236393362c7ee48f07588509704e05616fe37194[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Wed Sep 19 22:37:09 2018 -0300
+
+    subtotal e total do pedido
+
+[33mcommit 693c8e36acbaa144e2bf62e2edc820c99db68f7c[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Wed Sep 19 22:04:44 2018 -0300
+
+    Busca de produtos por nome e categorias
+
+[33mcommit e1d4428ee394678722cb7a13180076a28e917dcd[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Mon Sep 17 20:30:44 2018 -0300
+
+    Validação customizada no email para evitar email repetido na atualização do cliente
+
+[33mcommit be99720b8694cb257b3cd0b2bad5a0a141f5a43e[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Mon Sep 17 20:13:14 2018 -0300
+
+    Validação customizada no email para evitar duplicação
+
+[33mcommit dcb4f895341c8432929e668dc7e9cc19d6439a82[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 15 16:01:51 2018 -0300
+
+    Validação customizada de CPF e CNPJ na inserção de Cliente
+
+[33mcommit d1e541aca505362847d44be73ca787903c932c64[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 15 15:34:38 2018 -0300
+
+    ajustando delecao de cliente
+
+[33mcommit cda1e89b7749f047e11c10388183ffdf0a6217b9[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 15 15:15:51 2018 -0300
+
+    Inserir Clientes com POST
+
+[33mcommit 57250890f5a5f7739ee4c84eaa6235089330dd7b[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 15 12:51:06 2018 -0300
+
+    Correções update em categoria e construtor pagamento
+
+[33mcommit 3dc86342adeb4cdf6250eacc4d97c3925733ce01[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Wed Sep 12 22:52:11 2018 -0300
+
+    Insere, atualiza e deleta clientes
+
+[33mcommit 8e6167fca5b3cbf51c1d850cac6227af0ff407d2[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Wed Sep 12 22:19:43 2018 -0300
+
+    personalizacao do retorno da validacao
+
+[33mcommit 1034cc9f73d1fffb34f715314ae7e1d8ff787703[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Wed Sep 12 21:30:40 2018 -0300
+
+    Validacao Sintatica com bean
+
+[33mcommit 90f1107763637398f5bb133728d33533efd50c12[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 17:51:44 2018 -0300
+
+    paginação com parametros na requisicao de Categoria
+
+[33mcommit 241c289ccdbc24c7e1fffe3fcf1104ab3c0379f3[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 17:13:38 2018 -0300
+
+    Endpoint categorias através de DTO
+
+[33mcommit 0541f9a9b30fe914e755442a4e994683c0ec3f72[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 16:57:53 2018 -0300
+
+    deleção de Categoria e ajustes
+
+[33mcommit 42d7da9dd1d4d8e35af01f533b7d0c5dcae7b11f[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 16:37:33 2018 -0300
+
+    atualizando put para Categoria e ajustes gerais
+
+[33mcommit 7fc7053bb7416f91015691b83e8380b27e295a32[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 16:25:30 2018 -0300
+
+    inserindo nova Categoria com POST
+
+[33mcommit 57e569918ce6e2a9ea8b541890daa28d9b628fd0[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 15:53:22 2018 -0300
+
+    removendo anotações de jsonmanagedreference
+
+[33mcommit d22846eb55f138d7dd1bd20e0f88b794b8ebe6a7[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 15:44:16 2018 -0300
+
+    Endpoint Pedidos/id
+
+[33mcommit 521299249cf429b6df1cc06ce1bb24452273113f[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 14:50:31 2018 -0300
+
+    Adicionado ItemPedido e ItemPedidoPK e instaciado os dados
+
+[33mcommit 85afd6b392ae4bf5730ac61ce41e02e371905d0e[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sat Sep 8 14:08:36 2018 -0300
+
+    Adicionado Pedido, EstadoPagamento e Pagamento
+
+[33mcommit b8242c0cba55282bf90d70a24a480ff6b095ebf8[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sun Sep 2 19:43:05 2018 -0300
+
+    pponto 23
+
+[33mcommit 71e1596177a7a9f274fead3943d1cf1ebf595f83[m
+Author: Estevao Santiago <esantiagovieira@gmail.com>
+Date:   Sun Sep 2 19:03:29 2018 -0300
+
+    refazendo tudo
