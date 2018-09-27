@@ -115,10 +115,10 @@ public class DBTestService {
 		estadoRepository.saveAll(Arrays.asList(est1, est2));
 		cidadeRepository.saveAll(Arrays.asList(c1, c2, c3));
 		
-		Cliente cl1 = new Cliente(null, "Maria Silva", "avalonsantiago@gmail.com", "36378912377", TipoCliente.PESSOAFISICA, pe.encode("1234") );
+		Cliente cl1 = new Cliente(null, "Maria Silva", "avalonsantiago@gmail.com", "36378912377", TipoCliente.PESSOAFISICA, pe.encode("123456") );
 		cl1.getTelefones().addAll(Arrays.asList("27321321","12345678"));
 
-		Cliente cl2 = new Cliente(null, "Administrador", "esantiagovieira@gmail.com", "36378912377", TipoCliente.PESSOAFISICA, pe.encode("1234") );
+		Cliente cl2 = new Cliente(null, "Administrador", "esantiagovieira@gmail.com", "36378912377", TipoCliente.PESSOAFISICA, pe.encode("123456") );
 		cl2.getTelefones().addAll(Arrays.asList("987654321","23456781"));
 		cl2.addPerfil(Perfil.ADMIN);
 		
