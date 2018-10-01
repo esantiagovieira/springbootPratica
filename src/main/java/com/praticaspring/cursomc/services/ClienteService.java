@@ -46,7 +46,6 @@ public class ClienteService {
 
 	public Cliente find(Integer id) {
 		UserSS user = UserService.authenticated();
-		
 		if(user==null || !user.hasRole(Perfil.ADMIN) && !id.equals(user.getId())) {
 			throw new AuthorizationException("Acesso Negado");
 		}
@@ -96,7 +95,6 @@ public class ClienteService {
 	public Cliente fromDTO(ClienteNewDTO objDto) {
 		Cliente cli = new Cliente(null, objDto.getNome(), objDto.getEmail(), objDto.getCpfOuCnpj(), 
 				TipoCliente.toEnum(objDto.getTipo()), pe.encode(objDto.getSenha()));
-		System.out.println(pe.encode(objDto.getSenha()));
 		Cidade cid = new Cidade(objDto.getCidadeId(), null, null);
 		Endereco end = new Endereco(null, objDto.getLogradouro(), objDto.getNumero(), objDto.getComplemento(), objDto.getBairro(), 
 				objDto.getCep(), cli, cid);
@@ -117,6 +115,14 @@ public class ClienteService {
 	}
 	
 	public URI uploadProfilePicture(MultipartFile mFile) {
-		return s3Service.uploadFile(mFile);
+		UserSS user = UserService.authenticated();
+		if(user==null) {
+			throw new AuthorizationException("Acesso Negado");
+		}
+		URI uri = s3Service.uploadFile(mFile);
+		Cliente cli = find(user.getId());
+		cli.setImageUrl(uri.toString());
+		repo.save(cli);
+		return uri;
 	}
 }
